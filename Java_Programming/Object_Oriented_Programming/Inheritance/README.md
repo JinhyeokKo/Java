@@ -4,6 +4,10 @@
 > 2. single inheritance만 가능
 > 3. 코드의 재사용성 증가 -> 개발 생산성 증가
 
+<table>
+<tr>
+<td>
+
 ```Java
 // 부모 클래스
 public class Person {
@@ -80,6 +84,12 @@ public class LMSTest {
     }
 }
 ```
+
+![Inheritance01.png](Inheritance01.png)
+
+</td>
+<td>
+
 ```Java
 // 자식 클래스 1
 public class Student extends Person { // Person class를 상속
@@ -178,5 +188,7 @@ public class Professor extends Person {
 }
 ```
 
-![Inheritance01.png](Inheritance01.png)
+</td>
+</tr>
+</table>
 
