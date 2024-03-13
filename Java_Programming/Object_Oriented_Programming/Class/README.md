@@ -205,6 +205,10 @@ public class Member {
 >2. constructor를 호출할 때
 >3. 자신의 address value를 전달하고 싶을 때
 
+<table>
+<tr>
+<td>
+
 ```Java
 public class ThisTest {
     // this 의 대상
@@ -231,6 +235,10 @@ public class ThisTest {
 }
 }
 ```
+
+</td>
+<td>
+
 ```mermaid
 graph TD
     A[main 메서드 실행] --> B[ThisTest 객체 생성]
@@ -244,7 +252,15 @@ graph TD
     I --> J[main 메서드 종료]
 ```
 
+</td>
+</tr>
+</table>
+
 # 생성자 호출
+
+<table>
+<tr>
+<td>
 
 ```Java
 public class Member {
@@ -271,6 +287,10 @@ public class Member {
     }
 }
 ```
+
+</td>
+<td>
+
 ```mermaid
 graph TD
     A[main] --> B[m1 생성]
@@ -283,3 +303,7 @@ graph TD
     A --> I[m3 생성]
     I --> J[String, int 생성자<br>Amy, 22 전달]
 ```
+
+</td>
+</tr>
+</table>
