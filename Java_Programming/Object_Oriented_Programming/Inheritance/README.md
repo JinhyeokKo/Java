@@ -192,3 +192,58 @@ public class Professor extends Person {
 </tr>
 </table>
 
+# final 제어자
+
+>1. 초깃값을 변경하지 않고 그대로 사용하기 위해
+>2. 파이(원주율)와 같은 수학적 값을 사용하기 위해
+>3. 주민번호, 학번과 같은 유일한 값을 사용하기 위해
+>4. 이름을 대문자로 사용
+>5. 메서드 오버라이딩 제한 & 클래스 상속 제한
+
+<table>
+<tr>
+<td>
+사용 불가
+</td>
+<td>
+사용 가능
+</td>
+</tr>
+<tr>
+<td>
+
+```Java
+public class Person {
+    private final String ssn_ID;
+    
+    // 생성자에서 초기화 하지 않음
+    public Person(){
+        
+    }
+    
+    public void setSsn_ID(String ssn_ID){
+        // 변경 불가능한 값을 수정시도
+        this.ssn_ID2 = ssn_ID;
+    }
+}
+```
+
+</td>
+<td>
+
+```Java
+public class Person {
+    // 초깃값을 선언 후 사용
+    private final String ssn_ID = "156-879";
+    private final String ssn_ID2;
+    
+    // 생성자에서 초기화 후 사용
+    public Person(String ssn_ID2){
+        this.ssn_ID2 = ssn_ID2;
+    }
+}
+```
+
+</td>
+</tr>
+</table>
